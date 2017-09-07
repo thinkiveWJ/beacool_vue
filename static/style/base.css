@@ -1,0 +1,91 @@
+.btn:focus, .btn.focus, .btn:active:focus,.btn:active.focus, .btn.active:focus, .btn.active.focus, input:focus, input:active, select:focus, select:active:focus{
+  outline:none;
+  box-shadow:none;  }
+body{
+  background: #f9f9f7;
+  font-family: "Microsoft YaHei";
+}
+input[type='radio']{
+  vertical-align: top;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  font-size: 0;
+}
+.none{
+  display: none;
+}
+.fs35{
+  font-size: 35px;
+}
+.fs30{
+  font-size: 30px;
+}
+.fs24{
+  font-size: 24px;
+}
+.fs20{
+  font-size: 20px;
+}
+.top15{
+  margin-top: 15px;
+}
+.split3{
+  border-bottom: 3px solid #fff;
+}
+@media (max-width: 992px){
+  .fs35{
+    font-size: 18px;
+  }
+  .fs30{
+    font-size: 16px;
+  }
+  .fs24{
+    font-size: 14px;
+  }
+  .fs20{
+    font-size: 12px;
+  }
+}
+
+
+
+.consultation .consultation-img{
+  width: 40%;
+}
+.consultation .consultation-info{
+  padding-left: 15px;
+  width: 60%;
+  font-size: 14px;
+}
+.consultation .consultation-info .consultation-phone{
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+
+
+.main-navi.container-fluid{
+  background: #f9f9f7;
+}
+.navi{
+  height: 45px;
+  line-height: 45px;
+  text-align: left;
+}
