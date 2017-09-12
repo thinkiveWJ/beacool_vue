@@ -1,6 +1,6 @@
 <template>
   <div id="news" class="main-navi container">
-    <div class="navi">当前位置 <span class="glyphicon glyphicon-menu-right"></span> 摩赞动态</div>
+    <div class="navi"><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> 摩赞动态</div>
 
     <div class="row title text-left">
       <div class="col-md-4">
@@ -19,7 +19,7 @@
 
     <div class="row year">
       <div v-for="(item, index) in newsYears" :key="index"
-           :class="{'col-md-2': true, 'col-xs-3': index == 0, 'col-xs-2': index != 0 && index != newsYearsLen, 'col-xs-4': index == newsYearsLen}" >
+           class="col-md-2 col-xs-4" >
         <router-link :to="item['link']" v-html="item['text']" v-cloak>{{item['text']}}</router-link>
       </div>
     </div>
@@ -59,16 +59,13 @@
               }
             },
             text: '2016'
-          },
-          {
-            link: '',
-            text: '查看更多 <span class="glyphicon glyphicon-share-alt"></span>'
           }
         ],
         newsYearsLen: 0
       }
     },
     created () {
+      window.scrollTo(0, 0)
       this.newsYearsLen = this.newsYears.length - 1
     },
     components: {

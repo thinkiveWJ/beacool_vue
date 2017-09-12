@@ -4,7 +4,8 @@
     <div class="container-fluid">
       <div class="row bracelects">
         <div class="col-md-3 col-xs-12" v-for="(item, index) in picBracelects" :key="index">
-          <a :href="item['link']"><img v-lazy="item['url']"/></a>
+          <router-link v-if="item['flag']" :to="item['link']"><img v-lazy="item['url']"/></router-link>
+          <a v-else :href="item['link']"><img v-lazy="item['url']"/></a>
         </div>
       </div>
     </div>
@@ -22,19 +23,23 @@
         picBracelects: [
           {
             url: '/static/images/bracelect_m0.png',
-            link: ''
+            link: 'https://item.taobao.com/item.htm?spm=&id=550076547344',
+            flag: false
           },
           {
             url: '/static/images/bracelect_m1.png',
-            link: ''
+            link: '',
+            flag: false
           },
           {
             url: '/static/images/bracelect_m9.png',
-            link: ''
+            link: '/banner/bracelect5',
+            flag: true
           },
           {
             url: '/static/images/bracelect_app.png',
-            link: ''
+            link: '/appChild',
+            flag: true
           }
         ]
       }

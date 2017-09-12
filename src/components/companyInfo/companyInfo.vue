@@ -150,7 +150,7 @@
     margin: 15px auto;
   }
   #companyInfo .company-info-sm > li{
-    padding: 6px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #ddd;
   }
   #companyInfo .company-info-sm > li ul.details a{
@@ -158,5 +158,6 @@
     text-indent: 6px;
     color: #999;
     font-size: 12px;
+    margin-top: 15px;
   }
 </style>

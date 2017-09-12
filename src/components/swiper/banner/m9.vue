@@ -2,9 +2,9 @@
   <div id="m9">
     <ul class="list">
       <li>
-        <div class="desc desc01">
-          <div class="fs30">摩赞手环</div>
-          <div class="fs30">五彩态度*舞彩生活</div>
+        <div class="desc top15 desc01">
+          <div class="fs30 top15">摩赞手环</div>
+          <div class="fs30">五彩态度 · 舞彩生活</div>
           <div class="fs24">More Than，给你不止一点点</div>
         </div>
         <div><img v-lazy="'/static/images/m9_pic01.png'"></div>
@@ -19,7 +19,7 @@
       </li>
       <li>
         <div class="desc desc03">
-          <div class="fs30">交通充值，一键搞定</div>
+          <div class="fs30 top15">交通充值，一键搞定</div>
           <div class="fs20 top15">交通卡余额不足？杜绝现金、杜绝排队。</div>
           <div class="fs20">打开摩赞出行APP，登录摩赞电子钱包，</div>
           <div class="fs20">即可对你绑定的手环进行交通充值，一键搞定。</div>
@@ -45,7 +45,7 @@
         <div class="desc desc06">
           <div class="fs30">全天候呵护，</div>
           <div class="fs30">你的每一次心跳</div>
-          <div class="fs20 top15">心脏，人体活力之源，生命之本。摩赞全天24小时默默呵护，你的每一次心跳，关注你的每一次悲喜、平淡与激情。</div>
+          <div class="fs20 top15">心脏，人体活力之源，生命之本。摩赞全天24小时默默呵护，<br>你的每一次心跳，关注你的每一次悲喜、平淡与激情。</div>
         </div>
         <div><img v-lazy="'/static/images/m9_pic06.png'"></div>
       </li>
@@ -143,7 +143,7 @@
   #m9 ul.list li .desc14,
   #m9 ul.list li .desc15{
     left: 20%;
-    top: 30px;
+    top: 60px;
     color: #333;
   }
   #m9 ul.list li .desc06,
@@ -151,13 +151,9 @@
   #m9 ul.list li .desc15{
     color: #fff;
   }
-  #m9 ul.list li .desc .fs24,
-  #m9 ul.list li .desc .fs30{
-    font-weight: bold;
-  }
   #m9 ul.list li .desc02{
     left: 20%;
-    bottom: 30px;
+    bottom: 90px;
   }
   #m9 ul.list li .desc04,
   #m9 ul.list li .desc05{
@@ -170,19 +166,19 @@
   }
   #m9 ul.list li .desc07{
     left: 10%;
-    bottom: 30px;
+    bottom: 90px;
     width: 30%;
   }
   #m9 ul.list li .desc08,
   #m9 ul.list li .desc09{
     left: 10%;
-    top: 50%;
+    top: 45%;
     width: 30%;
-    -o-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    -o-transform: translate(0, -45%);
+    -moz-transform: translate(0, -45%);
+    -webkit-transform: translate(0, -45%);
+    -ms-transform: translate(0, -45%);
+    transform: translate(0, -45%);
   }
   #m9 ul.list li .desc12{
     right: 10%;

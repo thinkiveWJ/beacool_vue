@@ -18,7 +18,7 @@
     },
     created () {
       let id = this.$route.query.id
-      id = !id ? 'self' : id
+      id = !id ? 'travel' : id
       getProblems(this, id)
     },
     watch: {
@@ -253,8 +253,10 @@
     color: #333;
     position: relative;
   }
-  #problemSelf .detail .detail-title:hover{
-    color: #1889cf;
+  @media (min-width: 992px) {
+    #problemSelf .detail .detail-title:hover{
+      color: #1889cf;
+    }
   }
   #problemSelf .detail .detail-title .glyphicon{
     position: absolute;
@@ -270,5 +272,10 @@
   #problemSelf .detail .content .content{
     font-size: 12px;
     padding-left: 15px;
+  }
+  @media (max-width: 992px) {
+    #problemSelf{
+      margin-top: 15px;
+    }
   }
 </style>

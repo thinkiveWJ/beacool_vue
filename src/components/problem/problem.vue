@@ -1,6 +1,6 @@
 <template>
   <div id="problem" class="container main-navi">
-    <div class="navi">当前位置 <span class="glyphicon glyphicon-menu-right"></span> 服务与支持 <span class="glyphicon glyphicon-menu-right"></span> 常见问题</div>
+    <div class="navi"><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> 常见问题</div>
     <div class="row img">
       <div class="col-md-4 col-xs-6 col-md-offset-4 col-xs-offset-3">
         <img v-lazy="'/static/images/problem_pic.png'">
@@ -72,7 +72,7 @@
     methods: {
       activeFunc (index) {
         let id = this.$route.query.id
-        if (index === 0 && (id === undefined || id === 'self')) {
+        if (index === 1 && (id === undefined || id === 'travel')) {
           return {
             'router-link-exact-active': true,
             'router-link-active': true
@@ -86,6 +86,9 @@
           }
         })
       }
+    },
+    created () {
+      window.scrollTo(0, 0)
     }
   }
 </script>

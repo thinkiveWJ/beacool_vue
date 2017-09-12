@@ -1,6 +1,6 @@
 <template>
   <div id="morethan" class="main-navi container">
-    <div class="navi" v-cloak>当前位置 <span class="glyphicon glyphicon-menu-right"></span> {{title}}</div>
+    <div class="navi" v-cloak><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> {{title}}</div>
     <div class="row header">
       <div class="col-xs-4" v-for="(item, index) in morethan" :key="index">
         <router-link :to="item['link']" v-cloak>{{item['text']}}</router-link>
@@ -41,6 +41,7 @@
       }
     },
     created () {
+      window.scrollTo(0, 0)
 //      显示当前位置
       showNavTitle(this)
     },

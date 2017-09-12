@@ -1,6 +1,6 @@
 <template>
   <div id="consultation" class="main-navi container">
-    <div class="navi">当前位置 <span class="glyphicon glyphicon-menu-right"></span> 服务与支持 <span class="glyphicon glyphicon-menu-right"></span> 售后咨询</div>
+    <div class="navi"><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> 售后咨询</div>
     <!--<div class="img"><img v-lazy="/static/images/consultation.png"></div>-->
     <div class="row img">
       <div class="col-md-4 col-xs-6 col-md-offset-2 col-xs-offset-1">
@@ -65,6 +65,9 @@
   export default{
     components: {
       'v-footer': footer
+    },
+    created () {
+      window.scrollTo(0, 0)
     }
   }
 </script>
@@ -103,6 +106,16 @@
   @media (min-width: 992px){
     #consultation .service .icon{
       text-align: center;
+    }
+    #consultation .row.img .desc{
+      position: absolute;
+      top: 0;
+      right: 17%;
+      bottom: 0;
+      margin: auto;
+      width: 440px;
+      height: 45px;
+      font-size: 40px;
     }
   }
   #consultation .service .icon img{

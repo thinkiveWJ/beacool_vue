@@ -5,6 +5,12 @@ body{
   background: #f9f9f7;
   font-family: "Microsoft YaHei";
 }
+.s-h{
+  font-family: "SimHei";
+}
+[v-cloak] {
+  display: none;
+}
 input[type='radio']{
   vertical-align: top;
 }
@@ -31,17 +37,38 @@ img{
 .none{
   display: none;
 }
+.fs110{
+  font-size: 110px;
+}
+.fs60{
+  font-size: 60px;
+}
+.fs45{
+  font-size: 45px;
+}
+.fs40{
+  font-size: 40px;
+}
 .fs35{
   font-size: 35px;
 }
+.fs33{
+  font-size: 33px;
+}
 .fs30{
   font-size: 30px;
+}
+.fs25{
+  font-size: 25px;
 }
 .fs24{
   font-size: 24px;
 }
 .fs20{
   font-size: 20px;
+}
+.fs18{
+  font-size: 18px;
 }
 .top15{
   margin-top: 15px;
@@ -50,6 +77,14 @@ img{
   border-bottom: 3px solid #fff;
 }
 @media (max-width: 992px){
+  .fs110{
+    font-size: 24px;
+  }
+  .fs40,
+  .fs45,
+  .fs60{
+    font-size: 20px;
+  }
   .fs35{
     font-size: 18px;
   }
@@ -59,7 +94,9 @@ img{
   .fs24{
     font-size: 14px;
   }
-  .fs20{
+  .fs20,
+  .fs18,
+  .fs25{
     font-size: 12px;
   }
 }
@@ -89,3 +126,7 @@ img{
   line-height: 45px;
   text-align: left;
 }
+.navi a{
+  color: #333;
+}
+

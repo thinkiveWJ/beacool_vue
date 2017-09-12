@@ -3,10 +3,10 @@
     <ul class="list">
       <li>
         <div class="pic01 pic">
-          <div class="fs24">摩赞彩屏手环</div>
-          <div class="fs30">多的不只是色彩</div>
+          <div class="fs35">摩赞彩屏手环</div>
+          <div class="fs45">多的不只是色彩</div>
           <div class="img"><img v-lazy="'/static/images/bracelect5_pic01_icon.png'"></div>
-          <div class="fs20">多彩颜色，配0.96英寸屏，再加更多功能应用，更清晰、更直观、更丰富，更值得拥有。</div>
+          <div class="fs20">多彩颜色，配0.96英寸屏，再加更多功能应用，<br>更清晰、更直观、更丰富，更值得拥有。</div>
         </div>
         <div><img v-lazy="'/static/images/bracelect5_pic01.png'"></div>
       </li>
@@ -52,6 +52,11 @@
   </div>
 </template>
 <script type='text/ecmascript-6'>
+  export default {
+    created () {
+      window.scrollTo(0, 0)
+    }
+  }
 </script>
 <style type='text/css' rel='stylesheet'>
   #bracelect5 ul.list li{
@@ -62,7 +67,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 60%;
+    width: 30%;
     height: auto;
     color: #fff;
   }
@@ -104,14 +109,14 @@
     -webkit-transform: translate(-80%, -50%);
     -moz-transform: translate(-80%, -50%);
     -o-transform: translate(-80%, -50%);
-    width: 40%;
+    width: 30%;
   }
   #bracelect5 ul.list li .pic05{
     color: #333;
   }
   #bracelect5 ul.list li .pic06{
     color: #333;
-    width: 40%;
+    width: 30%;
     left: 10%;
     transform: translate(-10%, -50%);
     -o-transform: translate(-10%, -50%);

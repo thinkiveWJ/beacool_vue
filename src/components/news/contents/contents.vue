@@ -233,6 +233,7 @@
   }
   #newContents .title{
     font-size: 18px;
+    font-weight: bold;
   }
   #newContents .read-num{
     color: #999;
@@ -250,7 +251,7 @@
     color: #999;
   }
   #newContents .introduce .abstract{
-    font-size: 16px;
+    font-size: 14px;
   }
   #newContents .introduce img{
     padding: 15px 0 6px;

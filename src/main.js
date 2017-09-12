@@ -12,21 +12,17 @@ Vue.use(VueRouter)
 Vue.use(Vuex)
 Vue.use(VueAwesomeSwiper)
 Vue.use(VueLazyload)
-Vue.config.productionTip = false
+// 取消 Vue 所有的日志与警告。默认false
+// Vue.config.silent = true
+// 设置为 false 以阻止 vue 在启动时生成生产提示。默认true
+// Vue.config.productionTip = false
+// 配置是否允许 vue-devtools 检查代码。开发版本默认为 true，生产版本默认为 false。生产版本设为 true 可以启用检查。
+// Vue.config.devtools = false
 /* eslint-disable no-new */
 new Vue({
   template: '<App/>',
   components: {
     App
   },
-  router,
-  created () {
-    console.log(this)
-    window.scrollTo(0, 0)
-  },
-  watch: {
-    'route' () {
-      window.scrollTo(0, 0)
-    }
-  }
+  router
 }).$mount('#app')

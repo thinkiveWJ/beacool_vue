@@ -94,5 +94,10 @@ export default new Router({
       path: '*',
       redirect: '/'
     }
-  ]
+  ],
+  // 对于所有路由导航，简单地让页面滚动到顶部。
+  // 返回 savedPosition，在按下 后退/前进 按钮时，就会像浏览器的原生表现那样：
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
