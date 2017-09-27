@@ -27,7 +27,7 @@
       <div class="col-md-4 col-md-offset-2 col-sm-12">
         <div class="consultation">
           <div class="pull-left consultation-img">
-            <img v-lazy="'/static/images/qr_code.png'">
+            <img v-lazy="'/beacool/static/images/qr_code.png'">
           </div>
           <div class="pull-left consultation-info text-left">
             <div class="consultation-title">咨询服务（免费电话）</div>

@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <router-link :to="{path: '/'}" class="navbar-brand"><img class="logo" v-lazy="'/static/images/logo.png'"/></router-link>
+          <router-link :to="{path: '/'}" class="navbar-brand"><img class="logo" v-lazy="'/beacool/static/images/logo.png'"/></router-link>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarHeader" @click="toggleCollapse($event)">
@@ -25,86 +25,89 @@
       </div>
     </nav>
     <div class="container-fluid">
-      <div class="title-bracelects row hidden-xs hidden-sm" v-show="show" @mouseleave="show=false" v-cloak>
-        <div class="col-md-1 col-md-push-2" v-for="(item, index) in titleBracelects" :key="index">
-          <router-link v-if="item['flag']" :to="item['link']">
-            <img v-lazy="item['url']">
-            <div v-cloak>{{item['text']}}</div>
-          </router-link>
-          <a v-else :href="item['link']">
-            <img v-lazy="item['url']">
-            <div v-cloak>{{item['text']}}</div>
-          </a>
+      <transition name="slideDown">
+        <div class="title-bracelects row hidden-xs hidden-sm" v-if="show" @mouseleave="show=false" v-cloak>
+          <div class="col-md-1 col-md-push-2" v-for="(item, index) in titleBracelects" :key="index">
+            <router-link v-if="item['flag']" :to="item['link']">
+              <img v-lazy="item['url']">
+              <div class="title-bracelects-desc" v-cloak>{{item['text']}}</div>
+            </router-link>
+            <a v-else :href="item['link']">
+              <img v-lazy="item['url']">
+              <div class="title-bracelects-desc" v-cloak>{{item['text']}}</div>
+            </a>
+          </div>
         </div>
-      </div>
+      </transition>
+
     </div>
   </div>
 </template>
 <script type='text/ecmascript-6'>
-export default{
-  data () {
-    return {
-      show: false,
-      currentPath: this.$route.path,
-      titleBracelects: [
-        {
-          url: '/static/images/m0.png',
-          link: 'https://item.taobao.com/item.htm?spm=&id=550076547344',
-          text: 'M0',
-          flag: false
-        },
-        {
-          url: '/static/images/m1.png',
-          link: '',
-          text: 'M1',
-          flag: false
-        },
-        {
-          url: '/static/images/m9.png',
-          link: '/banner/bracelect5',
-          text: 'M9',
-          flag: true
-        }
-      ],
-      title: [
-        {
-          link: '/index',
-          text: '首页'
-        },
-        {
-          link: '/toggle',
-          text: '摩赞手环'
-        },
-        {
-          link: '/appChild',
-          text: 'APP'
-        },
-        {
-          link: '/problem/self',
-          text: '常见问题'
-        },
-        {
-          link: '/news',
-          text: '摩赞动态'
-        }
-      ]
-    }
-  },
-  methods: {
-    toggleCollapse (event) {
-      if (this.$refs.navbarHeaderBTN.getAttribute('class') === 'navbar-toggle') {
-        this.$refs.navbarHeaderBTN.click()
+  export default{
+    data () {
+      return {
+        show: false,
+        currentPath: this.$route.path,
+        titleBracelects: [
+          {
+            url: '/beacool/static/images/m0.png',
+            link: 'https://item.taobao.com/item.htm?spm=&id=550076547344',
+            text: 'M0',
+            flag: false
+          },
+          {
+            url: '/beacool/static/images/m1.png',
+            link: '',
+            text: 'M1',
+            flag: false
+          },
+          {
+            url: '/beacool/static/images/m9.png',
+            link: '/banner/bracelect5',
+            text: 'M9',
+            flag: true
+          }
+        ],
+        title: [
+          {
+            link: '/index',
+            text: '首页'
+          },
+          {
+            link: '/toggle',
+            text: '摩赞手环'
+          },
+          {
+            link: '/appChild',
+            text: 'APP'
+          },
+          {
+            link: '/problem/self',
+            text: '常见问题'
+          },
+          {
+            link: '/news',
+            text: '摩赞动态'
+          }
+        ]
       }
     },
-    mouseModule (index) {
-      if (index === 1) {
-        this.show = !this.show
-      } else {
-        this.show = false
+    methods: {
+      toggleCollapse (event) {
+        if (this.$refs.navbarHeaderBTN.getAttribute('class') === 'navbar-toggle') {
+          this.$refs.navbarHeaderBTN.click()
+        }
+      },
+      mouseModule (index) {
+        if (index === 1) {
+          this.show = !this.show
+        } else {
+          this.show = false
+        }
       }
     }
   }
-}
 </script>
 <style type='text/css' rel='stylesheet'>
   #header{
@@ -133,19 +136,66 @@ export default{
     margin: 5px auto;
   }
   #header .title-bracelects{
+    /*height: 0;*/
+    overflow: hidden;
     position: absolute;
+    /*padding: 0;*/
+    /*margin: 0;*/
     top: 52px;
     left: 0;
     right: 0;
-    padding: 15px 0;
     background: #f6f6f6;
   }
   #header .title-bracelects a{
     display: block;
     color: #333;
     font-size: 16px;
+    padding: 15px 0;
   }
   #header .title-bracelects a img{
     width: 50%;
+  }
+  #header .title-bracelects .title-bracelects-desc{
+    height: 30px;
+    line-height: 30px;
+  }
+  .slideDown-enter-active{
+    height: 100px;
+    overflow: hidden;
+    -moz-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -moz-animation:slideDown 1s;
+    -ms-animation:slideDown 1s;
+    -o-animation:slideDown 1s;
+    -webkit-animation:slideDown 1s;
+    animation:slideDown 1s;
+  }
+  .slideDown-leave-active {
+    height: 0;
+  }
+  @keyframes slideDown
+  {
+    from {height:0px;}
+    to {height:100px;}
+  }
+
+  @-webkit-keyframes slideDown {
+    from {height:0px;}
+    to {height:100px;}
+  }
+  @-moz-keyframes slideDown {
+    from {height:0px;}
+    to {height:100px;}
+  }
+  @-o-keyframes slideDown {
+    from {height:0px;}
+    to {height:100px;}
+  }
+  @-ms-keyframes slideDown {
+    from {height:0px;}
+    to {height:100px;}
   }
 </style>

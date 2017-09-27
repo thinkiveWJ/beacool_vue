@@ -13,7 +13,7 @@
       </div>
       <div class="clearfix"></div>
       <div class="col-md-10 col-xs-10 col-md-offset-1 col-xs-offset-1 news-pic">
-        <img v-lazy="'/static/images/new.png'">
+        <img v-lazy="'/beacool/static/images/new.png'">
       </div>
     </div>
 

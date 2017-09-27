@@ -3,7 +3,7 @@
     <address>
       @Copyright 2013 上海智向科技 备案号：泸ICP备14003586号-1号
     </address>
-    <div class="icon_copmany"><img v-lazy="'/static/images/icon_company.png'"></div>
+    <div class="icon_copmany"><img v-lazy="'/beacool/static/images/icon_company.png'"></div>
   </div>
 </template>
 <script type='text/ecmascript-6'>

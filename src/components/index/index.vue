@@ -22,22 +22,22 @@
       return {
         picBracelects: [
           {
-            url: '/static/images/bracelect_m0.png',
+            url: '/beacool/static/images/bracelect_m0.png',
             link: 'https://item.taobao.com/item.htm?spm=&id=550076547344',
             flag: false
           },
           {
-            url: '/static/images/bracelect_m1.png',
+            url: '/beacool/static/images/bracelect_m1.png',
             link: '',
             flag: false
           },
           {
-            url: '/static/images/bracelect_m9.png',
+            url: '/beacool/static/images/bracelect_m9.png',
             link: '/banner/bracelect5',
             flag: true
           },
           {
-            url: '/static/images/bracelect_app.png',
+            url: '/beacool/static/images/bracelect_app.png',
             link: '/appChild',
             flag: true
           }
@@ -59,6 +59,8 @@
   #index .bracelects a:hover{
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
   }
   #index .bracelects > .col-xs-12{
     padding: 0;

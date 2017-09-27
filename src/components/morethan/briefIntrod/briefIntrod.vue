@@ -1,13 +1,13 @@
 <template>
   <div id="morethanBriefIntrod">
     <div class="pic">
-      <img v-lazy="'/static/images/morethan_pic01.png'">
+      <img v-lazy="'/beacool/static/images/morethan_pic01.png'">
     </div>
     <div class="row about">
       <div class="col-md-2 text-left">ABOUT US</div>
       <div class="clearfix"></div>
       <div class="row text">
-        <div class="col-md-1 col-xs-6 col-sm-3 service-logo"><img v-lazy="'/static/images/service_logo.png'"></div>
+        <div class="col-md-1 col-xs-6 col-sm-3 service-logo"><img v-lazy="'/beacool/static/images/service_logo.png'"></div>
         <div class="clearfix"></div>
         <div class="col-xs-10 col-xs-push-1">
           <div>
