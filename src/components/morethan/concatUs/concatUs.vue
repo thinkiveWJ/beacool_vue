@@ -1,12 +1,12 @@
 <template>
   <div id="morethanConcatUs">
     <div class="pic">
-      <img v-lazy="'/beacool/static/images/morethan_pic02.png'">
+      <img v-lazy="'/static/images/morethan_pic02.png'">
       <div class="row concat-us">
         <div class="col-md-2 text-left">CONCAT US</div>
         <div class="clearfix"></div>
         <div class="row text">
-          <div class="col-md-1 col-xs-6 col-sm-3 service-logo"><img v-lazy="'/beacool/static/images/service_logo.png'"></div>
+          <div class="col-md-1 col-xs-6 col-sm-3 service-logo"><img v-lazy="'/static/images/service_logo.png'"></div>
           <div class="clearfix"></div>
           <div class="col-xs-10 col-xs-offset-1">
             <div class="col-md-6 text-left" v-for="(item, index) in concatUs" :key="index">

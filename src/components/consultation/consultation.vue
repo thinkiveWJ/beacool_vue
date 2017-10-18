@@ -1,10 +1,10 @@
 <template>
   <div id="consultation" class="main-navi container">
     <div class="navi"><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> 售后咨询</div>
-    <!--<div class="img"><img v-lazy="/beacool/static/images/consultation.png"></div>-->
+    <!--<div class="img"><img v-lazy="/static/images/consultation.png"></div>-->
     <div class="row img">
       <div class="col-md-4 col-xs-6 col-md-offset-2 col-xs-offset-1">
-        <img v-lazy="'/beacool/static/images/consultation.png'">
+        <img v-lazy="'/static/images/consultation.png'">
       </div>
       <div class="desc">售后咨询</div>
     </div>
@@ -12,11 +12,11 @@
     <div class="row service">
       <div class="col-md-2 title text-left">SERVICE</div>
       <div class="clearfix"></div>
-      <div class="col-md-1 col-xs-6 col-sm-3 service-logo"><img v-lazy="'/beacool/static/images/service_logo.png'"/></div>
+      <div class="col-md-1 col-xs-6 col-sm-3 service-logo"><img v-lazy="'/static/images/service_logo.png'"/></div>
       <div class="clearfix"></div>
 
       <div class="col-md-4 icon phone">
-        <img v-lazy="'/beacool/static/images/service_phone.png'">
+        <img v-lazy="'/static/images/service_phone.png'">
         <div class="desc">
           <div>售后客服电话</div>
           <div>400-663-0309</div>
@@ -24,14 +24,14 @@
         </div>
       </div>
       <div class="col-md-4 icon">
-        <img v-lazy="'/beacool/static/images/service_phone.png'">
+        <img v-lazy="'/static/images/service_phone.png'">
         <div class="desc">
           <div>售后客服邮箱</div>
           <div>service@beacool.com</div>
         </div>
       </div>
       <div class="col-md-4 icon">
-        <img v-lazy="'/beacool/static/images/service_pencil.png'">
+        <img v-lazy="'/static/images/service_pencil.png'">
         <div class="desc">
           <div>更多建议</div>
           <div>info@beacool.com</div>

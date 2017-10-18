@@ -2,7 +2,7 @@
   <div id="appChild" class="main-navi container">
     <div class="navi"><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> APP</div>
     <div class="row msg">
-      <div class="col-sm-offset-1 col-md-6"><img v-lazy="'/beacool/static/images/app.png'"></div>
+      <div class="col-sm-offset-1 col-md-6"><img v-lazy="'/static/images/app.png'"></div>
       <div class="col-md-3 col-sm-offset-1">
         <div class="title s-h">摩赞出行APP</div>
         <div class="desc">摩赞出行APP是上海智向自主开发的配合摩赞手环使用的工具APP产品，功能丰富，页面美观，操作方便。</div>
@@ -12,9 +12,9 @@
     <div class="row download">
       <div class="col-md-2 title">DOWNLOAD</div>
       <div class="clearfix"></div>
-      <div class="col-md-2 col-md-offset-3 col-xs-4"><a href="http://dl.beacool.com/versions.html?sid=20020"><img v-lazy="'/beacool/static/images/ios.png'"></a></div>
-      <div class="col-md-2 col-xs-4"><a href="http://dl.beacool.co/versions.html?sid=20021"><img v-lazy="'/beacool/static/images/android.png'"></a></div>
-      <div class="col-md-2 col-xs-4"><a href=""><img v-lazy="'/beacool/static/images/download_code.png'"></a></div>
+      <div class="col-md-2 col-md-offset-3 col-xs-4"><a href="http://dl.beacool.com/versions.html?sid=20020"><img v-lazy="'/static/images/ios.png'"></a></div>
+      <div class="col-md-2 col-xs-4"><a href="http://dl.beacool.com/versions.html?sid=20021"><img v-lazy="'/static/images/android.png'"></a></div>
+      <div class="col-md-2 col-xs-4"><a><img v-lazy="'/static/images/download_code.png'"></a></div>
       <div class="clearfix"></div>
       <v-concat></v-concat>
     </div>

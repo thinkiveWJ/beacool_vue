@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <router-link :to="{path: '/'}" class="navbar-brand"><img class="logo" v-lazy="'/beacool/static/images/logo.png'"/></router-link>
+          <router-link :to="{path: '/'}" class="navbar-brand"><img class="logo" v-lazy="'/static/images/logo.png'"/></router-link>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarHeader" @click="toggleCollapse($event)">
@@ -51,19 +51,19 @@
         currentPath: this.$route.path,
         titleBracelects: [
           {
-            url: '/beacool/static/images/m0.png',
+            url: '/static/images/m0.png',
             link: 'https://item.taobao.com/item.htm?spm=&id=550076547344',
             text: 'M0',
             flag: false
           },
           {
-            url: '/beacool/static/images/m1.png',
+            url: '/static/images/m1.png',
             link: '',
             text: 'M1',
             flag: false
           },
           {
-            url: '/beacool/static/images/m9.png',
+            url: '/static/images/m9.png',
             link: '/banner/bracelect5',
             text: 'M9',
             flag: true
@@ -136,11 +136,8 @@
     margin: 5px auto;
   }
   #header .title-bracelects{
-    /*height: 0;*/
     overflow: hidden;
     position: absolute;
-    /*padding: 0;*/
-    /*margin: 0;*/
     top: 52px;
     left: 0;
     right: 0;
@@ -153,49 +150,27 @@
     padding: 15px 0;
   }
   #header .title-bracelects a img{
-    width: 50%;
+    width: 50px;
+    height: 70px;
   }
   #header .title-bracelects .title-bracelects-desc{
     height: 30px;
     line-height: 30px;
   }
   .slideDown-enter-active{
-    height: 100px;
+    height: 130px;
     overflow: hidden;
-    -moz-animation-fill-mode:both;
-    -o-animation-fill-mode:both;
-    -ms-animation-fill-mode:both;
-    -webkit-animation-fill-mode:both;
-    animation-fill-mode:both;
-    -moz-animation:slideDown 1s;
-    -ms-animation:slideDown 1s;
-    -o-animation:slideDown 1s;
-    -webkit-animation:slideDown 1s;
-    animation:slideDown 1s;
+    transition: 1s;
   }
-  .slideDown-leave-active {
+  .slideDown-enter {
     height: 0;
   }
-  @keyframes slideDown
-  {
-    from {height:0px;}
-    to {height:100px;}
+  .slideDown-leave-active {
+    height: 130px;
+    overflow: hidden;
+    transition: .5s;
   }
-
-  @-webkit-keyframes slideDown {
-    from {height:0px;}
-    to {height:100px;}
-  }
-  @-moz-keyframes slideDown {
-    from {height:0px;}
-    to {height:100px;}
-  }
-  @-o-keyframes slideDown {
-    from {height:0px;}
-    to {height:100px;}
-  }
-  @-ms-keyframes slideDown {
-    from {height:0px;}
-    to {height:100px;}
+  .slideDown-leave-to {
+    height: 0;;
   }
 </style>

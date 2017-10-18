@@ -18,7 +18,11 @@ a{
   cursor: pointer;
   text-decoration: none;
 }
-a:hover{
+a:hover,
+a:visited,
+a:focus,
+a:active,
+a.active{
   text-decoration: none;
 }
 ul{
