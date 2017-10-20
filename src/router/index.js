@@ -6,45 +6,37 @@ export default new Router({
   routes: [
     {
       path: '/',
-
       redirect: '/index'
     },
     {
       path: '/index',
-      mode: 'history',
       component: resolve => require(['../components/index/index'], resolve)
     },
     {
       path: '/appChild',
-      mode: 'history',
       component: resolve => require(['../components/appChild/appChild'], resolve)
     },
     {
       path: '/consultation',
-      mode: 'history',
       component: resolve => require(['../components/consultation/consultation'], resolve)
     },
     {
       path: '/news',
-      mode: 'history',
       component: resolve => require(['../components/news/news'], resolve),
       redirect: '/news/contents',
       children: [
         {
           path: 'contents',
-          mode: 'history',
           component: resolve => require(['../components/news/contents/contents'], resolve)
         },
         {
           path: 'details',
-          mode: 'history',
           component: resolve => require(['../components/news/contents/details'], resolve)
         }
       ]
     },
     {
       path: '/morethan',
-      mode: 'history',
       component: resolve => require(['../components/morethan/morethan'], resolve),
       children: [
         {
@@ -52,7 +44,6 @@ export default new Router({
           query: {
             id: 0
           },
-          mode: 'history',
           component: resolve => require(['../components/morethan/briefIntrod/briefIntrod'], resolve)
         },
         {
@@ -60,14 +51,12 @@ export default new Router({
           query: {
             id: 2
           },
-          mode: 'history',
           component: resolve => require(['../components/morethan/concatUs/concatUs'], resolve)
         }
       ]
     },
     {
       path: '/problem',
-      mode: 'history',
       component: resolve => require(['../components/problem/problem'], resolve),
       redirect: '/problem/self',
       children: [
@@ -76,24 +65,20 @@ export default new Router({
           query: {
             id: 'self'
           },
-          mode: 'history',
           component: resolve => require(['../components/problem/self/self'], resolve)
         }
       ]
     },
     {
       path: '/banner/bracelect5',
-      mode: 'history',
       component: resolve => require(['../components/swiper/banner/bracelect5'], resolve)
     },
     {
       path: '/banner/m9',
-      mode: 'history',
       component: resolve => require(['../components/swiper/banner/m9'], resolve)
     },
     {
       path: '*',
-      mode: 'history',
       redirect: '/'
     }
   ],
