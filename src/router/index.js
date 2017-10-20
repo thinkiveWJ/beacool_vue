@@ -1,18 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index/index'
-import appChild from '@/components/appChild/appChild'
-import consultation from '@/components/consultation/consultation'
-import news from '@/components/news/news'
-import newsContents from '@/components/news/contents/contents'
-import newsDetails from '@/components/news/contents/details'
-import morethan from '@/components/morethan/morethan'
-import morethanBriefIntrod from '@/components/morethan/briefIntrod/briefIntrod'
-import morethanConcatUs from '@/components/morethan/concatUs/concatUs'
-import problem from '@/components/problem/problem'
-import problemSelf from '@/components/problem/self/self'
-import bracelect5 from '@/components/swiper/banner/bracelect5'
-import m9 from '@/components/swiper/banner/m9'
 Vue.use(Router)
 
 export default new Router({
@@ -23,54 +10,54 @@ export default new Router({
     },
     {
       path: '/index',
-      component: index
+      component: resolve => require(['../components/index/index'], resolve)
     },
     {
       path: '/appChild',
-      component: appChild
+      component: resolve => require(['../components/appChild/appChild'], resolve)
     },
     {
       path: '/consultation',
-      component: consultation
+      component: resolve => require(['../components/consultation/consultation'], resolve)
     },
     {
       path: '/news',
-      component: news,
+      component: resolve => require(['../components/news/news'], resolve),
       redirect: '/news/contents',
       children: [
         {
           path: 'contents',
-          component: newsContents
+          component: resolve => require(['../components/news/contents/contents'], resolve)
         },
         {
           path: 'details',
-          component: newsDetails
+          component: resolve => require(['../components/news/contents/details'], resolve)
         }
       ]
     },
     {
       path: '/morethan',
-      component: morethan,
+      component: resolve => require(['../components/morethan/morethan'], resolve),
       children: [
         {
           path: 'briefIntrod',
           query: {
             id: 0
           },
-          component: morethanBriefIntrod
+          component: resolve => require(['../components/morethan/briefIntrod/briefIntrod'], resolve)
         },
         {
           path: 'concatUs',
           query: {
             id: 2
           },
-          component: morethanConcatUs
+          component: resolve => require(['../components/morethan/concatUs/concatUs'], resolve)
         }
       ]
     },
     {
       path: '/problem',
-      component: problem,
+      component: resolve => require(['../components/problem/problem'], resolve),
       redirect: '/problem/self',
       children: [
         {
@@ -78,17 +65,17 @@ export default new Router({
           query: {
             id: 'self'
           },
-          component: problemSelf
+          component: resolve => require(['../components/problem/self/self'], resolve)
         }
       ]
     },
     {
       path: '/banner/bracelect5',
-      component: bracelect5
+      component: resolve => require(['../components/swiper/banner/bracelect5'], resolve)
     },
     {
       path: '/banner/m9',
-      component: m9
+      component: resolve => require(['../components/swiper/banner/m9'], resolve)
     },
     {
       path: '*',
