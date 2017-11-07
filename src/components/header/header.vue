@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <router-link :to="{path: '/'}" class="navbar-brand"><img class="logo" v-lazy="'/static/images/logo.png'"/></router-link>
+          <router-link :to="{path: '/'}" class="navbar-brand"><img class="logo" v-lazy="'/beacool/static/images/logo.png'"/></router-link>
         </div>
 
         <div class="collapse navbar-collapse" id="navbarHeader" @click="toggleCollapse($event)">
@@ -51,19 +51,19 @@
         currentPath: this.$route.path,
         titleBracelects: [
           {
-            url: '/static/images/m0.png',
+            url: '/beacool/static/images/m0.png',
             link: 'https://item.taobao.com/item.htm?spm=&id=550076547344',
             text: 'M0',
             flag: false
           },
           {
-            url: '/static/images/m1.png',
+            url: '/beacool/static/images/m1.png',
             link: '',
             text: 'M1',
             flag: false
           },
           {
-            url: '/static/images/m9.png',
+            url: '/beacool/static/images/m9.png',
             link: '/banner/bracelect5',
             text: 'M9',
             flag: true

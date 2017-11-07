@@ -5,8 +5,8 @@
     </address>
     <div class="icon_copmany">
       <router-link class="pull-left" :to="{path: '/morethan/concatUs', query: {id: '2'}}"><span class="glyphicon glyphicon-earphone"></span></router-link>
-      <a class="pull-left" target="_blank" href="http://weibo.com/p/1006065295095683/home?from=page_100606&mod=TAB&is_all=1#1506568153603"><img v-lazy="'/static/images/weibo.png'"></a>
-      <a class="pull-left" target="_blank" href="/static/html/map.html"><span class="glyphicon glyphicon-map-marker"></span></a>
+      <a class="pull-left" target="_blank" href="http://weibo.com/p/1006065295095683/home?from=page_100606&mod=TAB&is_all=1#1506568153603"><img v-lazy="'/beacool/static/images/weibo.png'"></a>
+      <a class="pull-left" target="_blank" href="/beacool/static/html/map.html"><span class="glyphicon glyphicon-map-marker"></span></a>
       <div class="clearfix"></div>
     </div>
   </div>

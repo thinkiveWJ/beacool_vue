@@ -87,12 +87,26 @@
     let newsContents = {
       2017: [
         {
+          title: '超薄！智向科技发布摩赞智能出行手环',
+          readNum: 813,
+          date: '2017-10-11',
+          author: '智向科技',
+          abstract: '摘要：2017年9月8日，上海智向科技在成都，正式发布旗下可穿戴产品——摩赞M0超薄智能出行手环。',
+          url: '/beacool/static/images/news_icon08.png',
+          link: {
+            path: '/news/details',
+            query: {
+              id: 20171011
+            }
+          }
+        },
+        {
           title: '智向科技联合Nordic，推出汽车手环',
           readNum: 919,
           date: '2017-07-24',
           author: '智向科技',
           abstract: '摘要：BeacoolCarFit手环用Nordic的nRF52832 SoC，Nordic SoC超低功耗，手环充一次电可1个月以上。',
-          url: '/static/images/news_icon01.png',
+          url: '/beacool/static/images/news_icon01.png',
           link: {
             path: '/news/details',
             query: {
@@ -106,7 +120,7 @@
           date: '2017-06-16',
           author: 'timothy',
           abstract: '摘要：阿里联合海尔优家，松下，NXP，智向科技等近200多家IoT企业成立“IoT合作伙伴计划联盟”',
-          url: '/static/images/news_icon02.png',
+          url: '/beacool/static/images/news_icon02.png',
           link: {
             path: '/news/details',
             query: {
@@ -120,7 +134,7 @@
           date: '2017-05-11',
           author: '智向科技',
           abstract: '摘要：在发布会上，智向科技的摩赞出行手环，作为与智能汽车互动的黑科技，引爆发布会现场。',
-          url: '/static/images/news_icon03.png',
+          url: '/beacool/static/images/news_icon03.png',
           link: {
             path: '/news/details',
             query: {
@@ -136,7 +150,7 @@
           date: '2016-08-01',
           author: '智向科技',
           abstract: '摘要：智向科技联合捷德集团研发的场景化智能支付手环，使手环成功运用于安全认证及支付领域。',
-          url: '/static/images/news_icon04.png',
+          url: '/beacool/static/images/news_icon04.png',
           link: {
             path: '/news/details',
             query: {
@@ -150,7 +164,7 @@
           date: '2016-06-01',
           author: '智向科技',
           abstract: '摘要：智向科技定位智能手环加入安全智能芯片及非接触线圈，成为安全支付领域的又一全新载体。',
-          url: '/static/images/news_icon05.png',
+          url: '/beacool/static/images/news_icon05.png',
           link: {
             path: '/news/details',
             query: {
@@ -164,7 +178,7 @@
           date: '2016-05-05',
           author: '智向科技',
           abstract: '摘要：智向手环进行移动支付不依赖网络，无需验证码，支付手环的SE安全芯片无法进行复制。',
-          url: '/static/images/news_icon06.png',
+          url: '/beacool/static/images/news_icon06.png',
           link: {
             path: '/news/details',
             query: {
@@ -178,7 +192,7 @@
           date: '2016-01-06',
           author: '智向科技',
           abstract: '摘要：智向科技信息有限公司与北京金联汇通信息技术有限公司联合宣布在北京签署战略合作协议。',
-          url: '/static/images/news_icon07.png',
+          url: '/beacool/static/images/news_icon07.png',
           link: {
             path: '/news/details',
             query: {
@@ -279,7 +293,7 @@
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: url('/static/images/news_hot.png');
+    background: url('/beacool/static/images/news_hot.png');
     background-size: 100% 100%;
   }
 </style>

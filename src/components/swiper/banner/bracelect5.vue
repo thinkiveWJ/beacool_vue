@@ -5,10 +5,10 @@
         <div class="pic01 pic">
           <div class="fs35">摩赞彩屏手环</div>
           <div class="fs45">多的不只是色彩</div>
-          <div class="img"><img v-lazy="'/static/images/bracelect5_pic01_icon.png'"></div>
+          <div class="img"><img v-lazy="'/beacool/static/images/bracelect5_pic01_icon.png'"></div>
           <div class="fs20">多彩颜色，配0.96英寸屏，再加更多功能应用，更清晰、更直观、更丰富，更值得拥有。</div>
         </div>
-        <div><img v-lazy="'/static/images/bracelect5_pic01.png'"></div>
+        <div><img v-lazy="'/beacool/static/images/bracelect5_pic01.png'"></div>
       </li>
       <li>
         <div class="pic02 pic">
@@ -16,21 +16,21 @@
           <div class="fs30">小视角，大舞台</div>
           <div class="fs20">多彩屏幕呈现的多彩应用，覆盖你整个生活，让你原本单调的生活更加丰富多彩！</div>
         </div>
-        <div><img v-lazy="'/static/images/bracelect5_pic02.png'"></div>
+        <div><img v-lazy="'/beacool/static/images/bracelect5_pic02.png'"></div>
       </li>
       <li>
         <div class="pic03 pic">
           <div class="fs30">思念，不如时刻陪伴</div>
           <div class="fs20">把她/他的照片植入手环屏幕，不管工作还是出行，跑步还是坐咖啡厅，每一分、每一秒，每一步、每一次心跳，都有她/他的陪伴。</div>
         </div>
-        <div><img v-lazy="'/static/images/bracelect5_pic03.png'"></div>
+        <div><img v-lazy="'/beacool/static/images/bracelect5_pic03.png'"></div>
       </li>
       <li>
         <div class="pic04 pic">
           <div class="fs30">更彩，更亮丽</div>
           <div class="fs20">不同于普通手环的小块屏，摩赞彩屏使屏幕显示色彩更丰富、更直观。有时候，我们需要一双有色眼镜，才发现生活并不是非黑即白，而是有更多色彩。</div>
         </div>
-        <div><img v-lazy="'/static/images/bracelect5_pic04.png'"></div>
+        <div><img v-lazy="'/beacool/static/images/bracelect5_pic04.png'"></div>
       </li>
       <li>
         <div class="pic05 pic">
@@ -38,7 +38,7 @@
           <div class="fs30">总有人懂</div>
           <div class="fs20">没有对比，就没有伤害，有时候，你比别人少的，确实就是那么块彩。</div>
         </div>
-        <div><img v-lazy="'/static/images/bracelect5_pic05.png'"></div>
+        <div><img v-lazy="'/beacool/static/images/bracelect5_pic05.png'"></div>
       </li>
       <li>
         <div class="pic06 pic">
@@ -46,7 +46,7 @@
           <div class="fs30">凸显多彩本色</div>
           <div class="fs20">相比于普通黑白屏，摩赞彩屏在户外阳光等强光下，依然高清显示，不失本色。</div>
         </div>
-        <div><img v-lazy="'/static/images/bracelect5_pic06.png'"></div>
+        <div><img v-lazy="'/beacool/static/images/bracelect5_pic06.png'"></div>
       </li>
     </ul>
   </div>

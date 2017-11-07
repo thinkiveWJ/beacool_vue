@@ -3,7 +3,7 @@
     <div class="navi"><router-link to="{path: '/index'}">首页</router-link> <span class="glyphicon glyphicon-menu-right"></span> 常见问题</div>
     <div class="row img">
       <div class="col-md-4 col-xs-6 col-md-offset-4 col-xs-offset-3">
-        <img v-lazy="'/static/images/problem_pic.png'">
+        <img v-lazy="'/beacool/static/images/problem_pic.png'">
       </div>
     </div>
 
